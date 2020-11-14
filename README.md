@@ -32,23 +32,33 @@ So we need a high Recall model since we don't want to miss any potential custome
 
 ### Features
 
-Feature	__:__Feature_Type__:__	       Description
-age	      __:__       numeric	           :    age of a person
+Feature	:Feature_Type:	       Description
+age	      :      numeric	           :    age of a person
 
-job	      __:__       Categorical,nominal:   type of job ('admin.','blue-collar','entrepreneur','housemaid','management','retired','self-employed, 'services',                                                                'student', 'technician','unemployed','unknown')
+job	      :      Categorical,nominal:   type of job ('admin.','blue-collar','entrepreneur','housemaid','management','retired','self-employed, 'services',                                                                'student', 'technician','unemployed','unknown')
 
 
-marital	  :      categorical,nominal	   marital status ('divorced','married','single','unknown'; note: 'divorced' means divorced or widowed)
-education	:      categorical,nominal	   ('basic.4y','basic.6y','basic.9y','high.school','illiterate','professional.course','university.degree','unknown')
-default	  :        categorical,nominal	   has credit in default? ('no','yes','unknown')
-housing	  :       categorical,nominal	   has housing loan? ('no','yes','unknown')
-loan	    :       categorical,nominal	   has personal loan? ('no','yes','unknown')
-contact	  :       categorical,nominal	   contact communication type ('cellular','telephone')
-month	    :      categorical,ordinal	   last contact month of year ('jan', 'feb', 'mar', ..., 'nov', 'dec')
-day_of_week	:     categorical,ordinal	   last contact day of the week ('mon','tue','wed','thu','fri')
-duration	 :      numeric	               last contact duration, in seconds . Important note: this attribute highly affects the output target (e.g., if duration=0 then y='no')
-campaign	 :      numeric	               number of contacts performed during this campaign and for this client (includes last contact)
-poutcome	 :      categorical,nominal	   outcome of the previous marketing campaign ('failure','nonexistent','success')
+marital	  :      categorical,nominal	 :  marital status ('divorced','married','single','unknown'; note: 'divorced' means divorced or widowed)
+
+education	:      categorical,nominal	 :  ('basic.4y','basic.6y','basic.9y','high.school','illiterate','professional.course','university.degree','unknown')
+
+default	  :        categorical,nominal	:   has credit in default? ('no','yes','unknown')
+
+housing	  :       categorical,nominal	 :  has housing loan? ('no','yes','unknown')
+
+loan	    :       categorical,nominal	 :  has personal loan? ('no','yes','unknown')
+
+contact	  :       categorical,nominal	 : contact communication type ('cellular','telephone')
+
+month	    :      categorical,ordinal	 : last contact month of year ('jan', 'feb', 'mar', ..., 'nov', 'dec')
+
+day_of_week	:     categorical,ordinal	 :  last contact day of the week ('mon','tue','wed','thu','fri')
+
+duration	 :      numeric	             :  last contact duration, in seconds . Important note: this attribute highly affects the output target (e.g., if duration=0 then y='no')
+
+campaign	 :      numeric	              : number of contacts performed during this campaign and for this client (includes last contact)
+
+poutcome	 :      categorical,nominal	  : outcome of the previous marketing campaign ('failure','nonexistent','success')
 
 * Target variable (desired output):
-y	         :      binary	        :         has the client subscribed a term deposit? ('yes','no')
+y	         :      binary	        :      :   has the client subscribed a term deposit? ('yes','no')
