@@ -62,3 +62,7 @@ poutcome	 :      categorical,nominal	  : outcome of the previous marketing campa
 
 * Target variable (desired output):
 y	         :      binary	        :      :   has the client subscribed a term deposit? ('yes','no')
+
+### References:
+SMOTE:https://machinelearningmastery.com/smote-oversampling-for-imbalanced-classification/
+https://matplotlib.org/3.3.3/
